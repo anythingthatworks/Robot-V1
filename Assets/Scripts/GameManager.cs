@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField] float gridSpace = 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +15,9 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         
+    }
+    public float getGridSpace()
+    {
+        return gridSpace;
     }
 }
